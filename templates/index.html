@@ -36,6 +36,11 @@
       <div class="stat-box"><strong>Current Price:</strong> ${{ current_price }}</div>
     </div>
   </div>
+  {% if error %}
+<div style="background:#ffe0e0;padding:15px;border-radius:8px;margin-bottom:20px;color:#c00;">
+  {{ error }}
+</div>
+{% endif %}
 
   <div class="grid">
     {% for chart in charts %}
